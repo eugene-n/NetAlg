@@ -123,11 +123,11 @@ void Edge::paint(QPainter *painter, const QStyleOptionGraphicsItem *, QWidget *)
     painter->setPen(QPen(Qt::black, 1, Qt::SolidLine, Qt::RoundCap, Qt::RoundJoin));
     painter->drawLine(line);
 
-    QString qstr1 = QString::number(sourcePoint.x());
-    painter->drawText(sourcePoint, qstr1);
+//    QString qstr1 = QString::number(sourcePoint.x());
+//    painter->drawText(sourcePoint, qstr1);
 
-    QString qstr2 = QString::number(destPoint.x());
-    painter->drawText(destPoint, qstr2);
+//    QString qstr2 = QString::number(destPoint.x());
+//    painter->drawText(destPoint, qstr2);
 
 
     // Draw the arrows
