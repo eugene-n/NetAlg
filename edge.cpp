@@ -123,12 +123,10 @@ void Edge::paint(QPainter *painter, const QStyleOptionGraphicsItem *, QWidget *)
     painter->setPen(QPen(Qt::black, 1, Qt::SolidLine, Qt::RoundCap, Qt::RoundJoin));
     painter->drawLine(line);
 
-//    QString qstr1 = QString::number(sourcePoint.x());
-//    painter->drawText(sourcePoint, qstr1);
-
-//    QString qstr2 = QString::number(destPoint.x());
-//    painter->drawText(destPoint, qstr2);
-
+//    QPointF dist = sourceNode()->pos() - destNode()->pos();
+//    qreal length = sqrt(pow(dist.x(),2) + pow(dist.y(),2));
+//    QString qstr1 = QString::number(length, 'f', 0);
+//    painter->drawText(sourcePoint.x()-20, sourcePoint.y()-20, qstr1);
 
     // Draw the arrows
     double angle = std::atan2(-line.dy(), line.dx());
